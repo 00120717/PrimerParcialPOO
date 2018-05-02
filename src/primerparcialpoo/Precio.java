@@ -2,7 +2,7 @@ package primerparcialpoo;
 
 /**
  *
- * @author MMonterrosa
+ * @author 00161617
  */
 public class Precio {
     double precioBase;
