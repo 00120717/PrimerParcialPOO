@@ -5,8 +5,8 @@ package primerparcialpoo;
  * @author 00161617
  */
 public class NumCorrelativo {
-    Piso piso;
-    int numHabitacion;
+    private Piso piso;
+    private int numHabitacion;
 
     public Piso getPiso() {
         return piso;
