@@ -15,13 +15,14 @@ public class Persona {
     private DUI dui;
     private int edad;
     
-    public Persona(){};
-    
-    
+    public Persona(){};  
 
-    public Persona(DUI dui, int edad) {
-        this.dui = dui;
-        this.edad = edad;
+    public Persona(Nombre nombre) {
+        this.nombre = nombre;
+    }
+     
+    public Persona(DUI dui) {
+        this.dui = dui;    
     }
 
     public Persona(int edad) {
@@ -51,6 +52,7 @@ public class Persona {
     public void setEdad(int edad) {
         this.edad = edad;
     }
+    
     
     
 }
