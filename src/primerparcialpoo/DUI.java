@@ -28,10 +28,17 @@ public class DUI{
     public void setVerificador(int verificador) {
         this.verificador = verificador;
     }
-    
     public boolean verificar(){
-        
-    return false;
+        int verificador=1,cont=9,var;
+        int suma=0,mod=0,ver=0;
+        for(int i=0;i<8;i++){
+               var=codigo[i]*cont;
+               suma+=var;
+               cont--;
+        }
+        mod=suma%10;
+        ver=10-mod;
+    return ver==verificador || ver==0;
 }
 
 }
