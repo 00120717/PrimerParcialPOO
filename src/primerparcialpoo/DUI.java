@@ -1,14 +1,37 @@
-/*
- * To change this license header, choose License Headers in Project Properties.
- * To change this template file, choose Tools | Templates
- * and open the template in the editor.
- */
 package primerparcialpoo;
 
 /**
  *
  * @author Oscar Lovato
  */
-public class DUI {
+public class DUI{
+    private int [] codigo=new int[8];
+    private int verificador;
+
+    public DUI(int verificador, int [] codigo) {
+        this.verificador = verificador;
+        this.codigo=codigo;
+    }
+
+    public int[] getCodigo() {
+        return codigo;
+    }
+
+    public void setCodigo(int[] codigo) {
+        this.codigo = codigo;
+    }
+
+    public int getVerificador() {
+        return verificador;
+    }
+
+    public void setVerificador(int verificador) {
+        this.verificador = verificador;
+    }
     
+    public boolean verificar(){
+        
+    return false;
+}
+
 }
