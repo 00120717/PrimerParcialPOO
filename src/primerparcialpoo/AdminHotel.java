@@ -10,5 +10,5 @@ package primerparcialpoo;
  * @author R.Fuentes
  */
 public class AdminHotel {
-    
+ int a;   
 }
