@@ -11,7 +11,7 @@ package primerparcialpoo;
  */
 public class Persona {
     
-    private Nombre nombre;
+    public Nombre nombre;
     private DUI dui;
     private int edad;
     
