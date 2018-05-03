@@ -24,6 +24,8 @@ public class NumCorrelativo {
         this.numHabitacion = numHabitacion;
     }
     
-    
+    public boolean verificarEstado(){
+        return false;
+    }
     
 }
