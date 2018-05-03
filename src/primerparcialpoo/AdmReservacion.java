@@ -2,6 +2,7 @@ package primerparcialpoo;
 
 import java.util.ArrayList;
 import java.util.Scanner;
+import java.util.Iterator;
 
 /**
  *
@@ -55,6 +56,8 @@ public class AdmReservacion {
         for (Reservacion reservacion : reservaciones){
             if (reservacion.idReservacion == id){
                 switch(opcion){
+                    
+                    //Cambiar Nombre
                     case 1: System.out.println("Ingrese nuevos nombres: ");
                     Scanner leer2 = new Scanner(System.in);
                     String newName= leer2.next();
@@ -62,17 +65,20 @@ public class AdmReservacion {
                     Scanner leer3 = new Scanner(System.in);
                     String newApellidos= leer3.next();
                     reservacion.huesped.nombre.setNombres(newName);
-                    reservacion.huesped.mombre.setApellidos(newApellidos);
+                    reservacion.huesped.nombre.setApellidos(newApellidos);
                     break;
                     
+                    //Cambiar Habitacion
                     case 2: 
+                        
+                        //Cambiar Estadia
                     case 3: System.out.println("Ingrese numero de dias: ");
                     Scanner leer4 = new Scanner(System.in);
                     String newEstadia= leer4.next();
                     int estadia = Integer.parseInt(newEstadia);
-                    reservacion.huesped.setNumDias(estadia);
+                    reservacion.setNumDias(estadia);
                     break;
-                    
+                    //Cambiar Fecha
                     case 4: System.out.println("Ingrese dia: ");
                     Scanner leer5 = new Scanner(System.in);
                     String dia= leer5.next();
@@ -92,20 +98,25 @@ public class AdmReservacion {
                     reservacion.fecha.setMes(newMes);
                     reservacion.fecha.setAnnio(newAnnio);
                     
-                    case 5: System.out.println("1) Paquete Basico ");
-                    System.out.println("2) Paquete Premium ");
-                    System.out.println("Ingrese una opcion: ");
-                    Scanner leer8 = new Scanner(System.in);
-                    String opcPaquete = leer8.next();
-                    int opcionPkt = Integer.parseInt(opcPaquete);
+                    break;
+                    
+                    case 5:
+                        break;
                     
                 }
             }
         }   
     }
-    public void cancelarReservacion(){
+    public void cancelarReservacion(int id){
         
+        for (Reservacion reservacion : reservaciones){
+            if (reservacion.getIdReservacion() == id){
+                reservaciones.remove(reservacion);
+            }   
+        }
     }
-    
-    
+        
+        
+        
+       
 }
