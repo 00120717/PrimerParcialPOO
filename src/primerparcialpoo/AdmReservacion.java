@@ -23,9 +23,12 @@ public class AdmReservacion {
     public void verReservacion(int id){
         for (Reservacion reservacion : reservaciones){
             if (reservacion.idReservacion == id){
-                System.out.println("Nombre: " + reservacion.Persona.getNombres() + reservacion.Persona.getApellidos());
-                System.out.println("Habitacion: " + reservacion.Habitacion.NumCorrelativo.getPiso() 
-                                                + reservacion.Habitacion.NumCorrelativo.getNumHabitacion());
+                Nombre nombre =reservacion.huesped.getNombre();
+                System.out.println("Nombre: " + nombre.getNombres() + nombre.getApellidos());
+                
+                NumCorrelativo numCorrelativo = reservacion.habitacion.getIdHabitacion();
+                System.out.println("Habitacion: " + numCorrelativo.getPiso() + numCorrelativo.getNumHabitacion());
+                
                 System.out.println("Fecha: " + reservacion.Fecha.getDia() +"/" +  reservacion.Fecha.getMes() + "/"+  reservacion.Fecha.getAnnio() );            
                 System.out.println("Estadia: " + reservacion.getNnumDias());
                 System.out.println("Precio por Dia: " + reservacion.precioPorDia.getPrecioBase());
