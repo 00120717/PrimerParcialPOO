@@ -11,11 +11,11 @@ package primerparcialpoo;
  */
 public class Nombre {
     private String nombres;
-    private String Apellidos;
+    private String apellidos;
 
-    public Nombre(String nombres, String Apellidos) {
+    public Nombre(String nombres, String apellidos) {
         this.nombres = nombres;
-        this.Apellidos = Apellidos;
+        this.apellidos = apellidos;
     }
 
     public String getNombres() {
@@ -27,11 +27,11 @@ public class Nombre {
     }
 
     public String getApellidos() {
-        return Apellidos;
+        return apellidos;
     }
 
-    public void setApellidos(String Apellidos) {
-        this.Apellidos = Apellidos;
+    public void setApellidos(String apellidos) {
+        this.apellidos = apellidos;
     }
     
 }
