@@ -10,7 +10,12 @@ package primerparcialpoo;
  * @author R.Fuentes
  */
 public class Reservacion {
-   public Persona huesped; Habitacion habitacion; int numDias; Precio precioPorDia,precioTotal;
+    
+   public Persona huesped; 
+   Habitacion habitacion; 
+   int numDias, idReservacion; 
+   Precio precioPorDia,precioTotal;
+   
     public Reservacion(){}
 
     public Persona getHuesped() {
@@ -60,6 +65,15 @@ public class Reservacion {
         this.precioPorDia = precioPorDia;
         this.precioTotal = precioTotal;
     }
+
+    public int getIdReservacion() {
+        return idReservacion;
+    }
+
+    public void setIdReservacion(int idReservacion) {
+        this.idReservacion = idReservacion;
+    }
+    
     
    
     
